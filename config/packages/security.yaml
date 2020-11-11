@@ -53,6 +53,7 @@ security:
 
     access_control:
         # Admin login page needs to be accessed without credential
+        - { path: ^/admin/laboratorio$, role: IS_AUTHENTICATED_FULLY }
         - { path: ^/admin/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/logout$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/login_check$, role: IS_AUTHENTICATED_ANONYMOUSLY }

@@ -18,4 +18,4 @@ class User extends BaseUser
      * @ORM\Column(type="integer")
      */
     protected $id;
-}
+    }
